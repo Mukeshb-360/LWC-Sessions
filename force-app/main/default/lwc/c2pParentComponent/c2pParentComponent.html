@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="P2C Component">
+        <div class="slds-var-m-around_medium">
+            <lightning-button label="Show Modal" onclick={clickHandler}></lightning-button> 
+                <h2>{message}</h2>
+            <template if:true={isModalShow}>
+                <!-- its mandatory to use 'on' before event name -->
+                <c-c2p-child-component
+                    onclose = {closeModal}
+                ></c-c2p-child-component>
+            </template>
+        </div>     
+    </lightning-card>
+</template>
