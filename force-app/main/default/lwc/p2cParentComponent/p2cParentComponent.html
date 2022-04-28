@@ -1,0 +1,26 @@
+<template>
+    <div class="slds-m-around_medium">
+        <c-p2c-child-component
+            card-header = {heading}
+            message = "Hey Solidity"
+        ></c-p2c-child-component>
+    </div>
+
+    <div class="slds-m-around_medium">
+        <c-p2c-carosel-component
+            carosel-data = {caroselDetails}
+        ></c-p2c-carosel-component>
+    </div>
+
+    <lightning-card title="Parent to child Method call">
+        <div class="slds-m-around_medium">
+            <c-p2c-slider-component></c-p2c-slider-component>
+            <lightning-button 
+                label="Reset" 
+                title="Reset" 
+                onclick={resetHandler} 
+                class="slds-m-left_x-small"
+            ></lightning-button>
+        </div>
+    </lightning-card>
+</template>
