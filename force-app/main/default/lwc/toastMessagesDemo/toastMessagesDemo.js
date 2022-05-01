@@ -20,6 +20,7 @@ export default class ToastMessagesDemo extends LightningElement {
         this.showToast("Error!","Account Creation Failed !","error");
     }
     warningHandler(){
+        // please do comment the below and try to put into above structure
         const events = new ShowToastEvent({
             title : "Warning!",
             message : "Password must conatains 1 uppercase letter !",
