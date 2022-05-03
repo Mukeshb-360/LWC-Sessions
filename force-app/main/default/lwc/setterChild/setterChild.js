@@ -5,7 +5,7 @@ export default class SetterChild extends LightningElement {
 
     @api
     get detail(){
-        return this.userDetail
+         return this.userDetail
     }
 
     set detail(data){
