@@ -1,11 +1,11 @@
 import { LightningElement } from 'lwc';
 
-export default class ToastMessagesDemo extends LightningElement {
+export default class ToastMessagesDemo extends LightningElement  {
     sucessHandler(){
         // const events = new ShowToastEvent({
         //     title : "Success",
         //     message : "Account Created Sucessfully !",
-        //     variant : "success"
+        //      variant : "success"
         // });
         // this.dispatchEvent(events);
         this.showToast("Success","Account Created Sucessfully !","success");
