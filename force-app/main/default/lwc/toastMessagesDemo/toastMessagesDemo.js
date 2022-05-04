@@ -1,5 +1,5 @@
 import { LightningElement } from 'lwc';
-
+import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 export default class ToastMessagesDemo extends LightningElement  {
     sucessHandler(){
         // const events = new ShowToastEvent({
@@ -21,12 +21,13 @@ export default class ToastMessagesDemo extends LightningElement  {
     }
     warningHandler(){
         // please do comment the below and try to put into above structure
-        const events = new ShowToastEvent({
-            title : "Warning!",
-            message : "Password must conatains 1 uppercase letter !",
-            variant : "warning"
-        });
-        this.dispatchEvent(events);
+        // const events = new ShowToastEvent({
+        //     title : "Warning!",
+        //     message : "Password must conatains 1 uppercase letter !",
+        //     variant : "warning"
+        // });
+        //this.dispatchEvent(events);
+        this.showToast("Warning!","Password must conatains 1 uppercase letter !","warning");
     }
 
     showToast(title,message,variant){
